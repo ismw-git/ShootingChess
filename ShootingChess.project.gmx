@@ -12,6 +12,7 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -37,15 +38,33 @@
       <script>scripts\tictocSystem_initialize.gml</script>
     </scripts>
     <script>scripts\scrNull.gml</script>
-    <script>scripts\drawInst_self.gml</script>
+    <script>scripts\drawInst_initialize.gml</script>
     <script>scripts\zDepth_initialize.gml</script>
+    <script>scripts\shootingSystem_initialize.gml</script>
+    <scripts name="chess">
+      <script>scripts\chess_create.gml</script>
+      <script>scripts\chess_intialize.gml</script>
+      <scripts name="chessCollision">
+        <script>scripts\chessCol_base.gml</script>
+      </scripts>
+      <scripts name="player">
+        <script>scripts\player_create.gml</script>
+        <script>scripts\player_initialize.gml</script>
+      </scripts>
+      <scripts name="rpg">
+        <script>scripts\rpgValue_initialize.gml</script>
+        <script>scripts\rpgValue_drawValue.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\oPlayer</object>
-    <object>objects\object7</object>
+    <object>objects\oChess</object>
     <object>objects\object1</object>
     <object>objects\oColDraw</object>
     <objects name="system">
@@ -58,6 +77,7 @@
         <object>objects\oParCollision</object>
       </objects>
     </objects>
+    <object>objects\object7</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

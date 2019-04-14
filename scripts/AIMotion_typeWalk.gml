@@ -3,7 +3,7 @@
 
 var _dir = argument[0];
 phyMotion_add(1280, _dir);
-if (zDepth_isOnFloor()) zDepth_set_zspd(-3);
+// if (zDepth_isOnFloor()) zDepth_set_zspd(-3);
 
 #define AIMotion_addWalk
 /// AIMotion_addWalk();

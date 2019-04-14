@@ -26,9 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>
-// debug system create
-instance_create(0, 0, oDebugSystem);
-
 // window system create
 instance_create(0, 0, oWindowSystem);
 
@@ -38,9 +35,16 @@ instance_create(0, 0, oViewSystem);
 // tictoc system create
 instance_create(0, 0, oTictocSystem);
 
+// debug system create
+instance_create(0, 0, oDebugSystem);
+
 
 // player create
 //instance_create(64, 64, oPlayer);
+/// need to change viewSystem_update value
+globalvar player;
+player = player_create(64, 96);
+chess_create(96, 160, oChess);
 </string>
           </argument>
         </arguments>

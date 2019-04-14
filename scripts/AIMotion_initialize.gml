@@ -2,7 +2,6 @@
 /// AIMotion_initialize();
 // AI's motion algorithm
 
-tictocSystem_addUser(id);
 AIMotionList = ds_list_create();
 
 AIMotionList_curNum = 0;
@@ -17,7 +16,7 @@ ds_list_destroy(AIMotionList);
 /// AIMotion_update();
 
 // get input
-dir = point_direction(x, y, oPlayer.x, oPlayer.y);
+dir = point_direction(x, y, player.x, player.y);
 
 
 AIMotion_typeMove(8, dir);

@@ -5,7 +5,7 @@ zDepth_z = 0;
 zDepth_zspd = 0;
 
 zDepth_floor = 0;
-zDepth_gravity = 0.3;
+zDepth_gravity = 0.2;
 
 #define zDepth_update
 /// zDepth_update();

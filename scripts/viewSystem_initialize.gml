@@ -14,7 +14,7 @@ view_surface_id[0] = surface_view;
 #define viewSystem_update
 /// viewSystem_update();
 
-viewSystem_followInst_gradual(oPlayer);
+viewSystem_followInst_gradual(player);
 
 #define viewSystem_followInst
 /// viewSystem_followInst(id);

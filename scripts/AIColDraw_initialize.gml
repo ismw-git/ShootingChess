@@ -10,7 +10,10 @@ alpha = 0;
 
 #define AIColDraw_draw
 /// AIColDraw_draw();
-
+if (!instance_exists(par)) {
+    instance_destroy();
+    return 0;
+}
 time++;
 if (time >= timeMax) instance_destroy();
 

@@ -29,3 +29,10 @@ viewSystem_surfExistsCheck();
 
 guiPerWindow = window_width/gui_width;
 draw_surface_ext(oViewSystem.surface_view, 0, 0, 1/guiPerWindow, 1/guiPerWindow, 0, c_white, 1);
+
+if (instance_exists(oDebugSystem)) {
+    var _debug = oDebugSystem;
+    if (_debug.draw && surface_exists(_debug.surface_debug)) {
+        draw_surface_ext(_debug.surface_debug, 0, 0, 1/guiPerWindow, 1/guiPerWindow, 0, c_white, 0.7);
+    }
+}
